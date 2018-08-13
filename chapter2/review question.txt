@@ -1,0 +1,15 @@
+1. 	function
+2. 	use file <iostream> to take place of these code before compile.
+3. 	use all the definition included in namespace "std". For example use "cout" instead of  "std::cout".
+4. 	cout << "Hello, world\n"; 
+	or cout << "Hello, world"<< endl;
+5. 	int cheeses;
+6.	cheeses = 32;
+7.	cin >>cheeses;
+8.	cout << "We have " << cheeses << " varieties of cheese,";
+9.	return type, function name, argument list.
+10.	The type of return value is "void".
+11. (not sure)
+	no include <iostream> file .
+                no use namespace std.
+	"using namesapce std" is written in other functions. 
