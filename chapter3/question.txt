@@ -1,0 +1,18 @@
+1.	To meet different occasions.
+2.	short a = 80;
+	unsigned b = 42110;
+	unsigned long c = 3000000000; 
+	or long long c = 3000000000;
+3.	None
+4. 	33L is long type constant, while 33 is int type constant.
+5.	in the system using ASCII they're the same. But others may be not.
+6.	char x = 88;
+	cout << x <<endl;
+	cout.put(88);
+	cout << '\130' << '\x58' << endl;
+7.	long -> double  //no loss
+	long long -> double //loss
+8.	a. 74 b. 4 c. 0 d. 4.5 c. 3
+9.	int x = int(x1)+int(x2);
+	int x = x1 + x2;
+10.	a. int b. float c. char d. char32_t e. double
