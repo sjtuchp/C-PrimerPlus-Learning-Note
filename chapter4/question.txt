@@ -1,0 +1,53 @@
+1.	a. char actor[30];
+	b. short betsie[100];
+	c. float chuck[13];
+	d. long double dipsea[64];
+
+2.	a. array<char, 30> actor;
+	b. array<short, 100> betsie;
+	c. array<float, 13> chuck;
+	d. array<long double, 64> dipsea;
+
+3.	int five_odds[5] = {1, 3, 5, 7, 9};
+
+4.	int even = five_odds[0] + five_odds[4];
+
+5. 	cout << ideas[1]<<endl;
+
+6.	char str[] = "cheeseburger";
+
+7.	string str = "WaldorfSalad";
+
+8.	struct fish{
+		string name;
+		int weight;
+		double length;
+	};
+9.	fish first_fish = {"catfish", 10, 1.72};
+
+10. 	enum Response = {Yes = 1, No = 0, Maybe=2};
+
+11.	double *p = &ted;
+	cout << *p << endl;
+
+12.	float *p = treaclel;
+	cout<< *p << " " << *(p+9) << endl;
+
+13.	int n;
+	cin >> n;
+	int *arr  = new int [n];
+         or	vector<int> arr(n);
+
+14.	the address of the first letter 'H' in this string
+
+15.	fish *p = new fish;
+	cout << p->name << endl;
+
+16. 	It can still read the string, but it will end if meet a space.
+
+17.	#include <vector>
+	#include <array>
+	#include<string>
+	const NUM = 10;
+	std::vector<std::string> v(NUM);
+	std::array<std::string,NUM> arr;
