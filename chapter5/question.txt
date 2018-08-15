@@ -1,0 +1,24 @@
+1.	entry condition loop: firstly judge the condition then begin the body statement( for, while)
+	exit condition loop: firstly run the body statement then judge the condition(do while)
+
+2. 	01234\n
+
+3.	0369
+	12
+
+4.	6
+	8
+
+5.	k = 8
+
+6.	for (int i = 1; i<65; i*=2) cout << i << endl;
+
+7.	for (;;)
+	{statement1;statement2;...;}
+
+8.	set x to 20
+	set y to 1
+
+9 	a. cin >> ch : ignore the space, \t, \n
+	b. cin.get(ch) : get any character and set ch to it, return type isteam
+	c. ch = cin.get() : cin.get() return the recent character and set ch to it.
