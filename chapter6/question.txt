@@ -1,0 +1,36 @@
+1.	If ch==' ', the second one only run one condition statement.
+	But for the first, it will run two condition statement.
+
+2.	It will print the integer instead of the character.
+
+3.	H$i$!$
+	$
+	S$e$n$d$ $ct1 = 9, ct2 = 9
+
+4. 	a. weight >= 115 && weight < 125
+	b. ch == 'q' || ch == 'Q'
+	c. x % 2 == 0 && x != 26
+	d. x % 2 == 0 && x %26 != 0
+	e. donation >=1000 && donation <=2000 || guest == 1
+	f. ch >= 'a' && ch <= 'z' || ch>='A' && ch <= 'Z'
+
+5.	!!x must be 0 or 1, while x may be another value.
+
+6.	x >=0 ? x : -x;
+
+7.	switch (ch){
+		case 'A' : a_grade++;break;
+		case 'B' : b_grade++;break;
+		case 'C' : c_grade++;break;
+		case 'D' : d_grade++;break;
+		default: f_grade++;	
+	}
+
+8.	cin can accpet more kind of characters.
+
+9.	int line = 0;
+	char ch;
+	while ((ch = cin.get() )!='Q')
+		if (ch == '\n') line++;
+
+ 
