@@ -1,0 +1,60 @@
+1.	prototype defination calling
+
+2.	a. void igor();
+	b. float tofu(int);
+	c. double mpg(double, double);
+	d. long summation(long [], int);
+	e. double doctor(const string);
+	f. void ofcourse(boss);
+	g. string plot(map);
+
+3.	void set_array(int arr[], int len, int value){
+		for (int i=1; i < len ;i++) arr[i] = value;
+	}
+
+4.	void set_array(int *begin, int *end, int value){
+		for (int *pt = begin; pt != end; pt++) *pt=value;
+	}
+
+5.	double max(const double arr[], int len){
+		double result = arr[0];
+		for (int i=1;i<len;i++) result = result > arr[i] ? result : arr[i];
+		return result;
+	}
+
+6.	 because it is the copy of argument
+
+7. 	char *str;
+	char str[];
+	"string"
+
+8.	int replace(char *str, char c1, char c2){
+		int count = 0;
+		while(*str){
+			if (*str == c1){ *str = c2; count++;}
+			++str;
+		}
+		return count;
+	}
+
+9.	'p' 'c'
+
+10.	void fun1(my_struct); fun1(struct1); // resume more time and space, can't change the original value.
+	void fun2(my_struct *);fun1(&struct1); // spend less time and space, can change the original value.
+
+11. 	int judge(int (*)(const char *));
+
+12. 	a. void display(applicant a){ 
+		cout << a.name << endl;
+		for (int i = 0; i<3; i++) cout << a.credit_ratings[i] << endl;
+	}
+	b. void display(const applicant *p){
+		cout << a->name << endl;
+		for (int i = 0; i<3; i++) cout << a->credit_ratings[i] << endl;
+	}	
+13.	typedef void (*ptr1)(applicant *) ;
+	typedef const char * (*ptr2) (const applicant *, const applicant *)  ;
+	ptr1 p1 = f1;
+	ptr2 p2 = f2;
+	ptr1 ap[5];
+	ptr2 (*pa)[10] ;
