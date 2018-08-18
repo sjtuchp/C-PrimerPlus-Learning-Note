@@ -1,0 +1,56 @@
+1.	simple and multi-use
+
+2.	a. void song(const char * name, int times = 1);
+	b. not need
+	c. available
+
+3.	void iquote(int)£»
+	void iquote(double);
+	void iquote(const string);
+
+4.	a.void display(const box & b){
+		cout << b.maker << b. height << b.width << b.lenght<<b.volume<<endl;
+	}
+	b. void set_volume(box & b){
+		b.volume = b.height * b.width * b.length
+	}
+
+5.	void fill(std::array<double, Seasons> &pa);
+	void show(const std::array<double, Seasons> &da);
+void fill(std::array<double, Seasons> &pa){
+	using namespace std;
+	for (int i = 0; i < Seasons;i++){
+		cout << "Enter " << Snames[i] << " expenses: ";
+		cin >> pa[i];
+	}
+}
+void show(const std::array<double, Seasons> &da){
+	using namespace std;
+	double total = 0.0;
+	cout << "\nEXPENSES\n";
+	for (int i = 0; i<Seasons;i++){
+		cout << Snames[i] << ": $" << da[i] << endl;
+		total += da[i];
+	}
+	cout << "Total Expenses: $" << total << endl;
+}
+	fill(expenses);
+	show(expenses);
+
+6.	a. double mass(double density, double volume = 1.0);
+	b. void repeat(int n, const char * str);
+	    void repeat(const char *str);
+	c. int average (int x, int y);
+	    double average (double x, double y);
+	d. inavailable
+
+7. 	template <typename T>
+	T max(T a, T b){ return a>b?a:b;}
+
+8.	template <> box & max <box>(box &b1,  box &b2)
+	{
+		return b1.volume>b2.volume ? b1 : b2;
+	}
+
+9.	float v1; float & rm; float & m; int v4; double v5;
+
