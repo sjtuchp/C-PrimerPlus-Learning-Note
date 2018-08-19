@@ -1,0 +1,33 @@
+1.	a. automatic
+	b. static with external linkage
+	c. static with internal linkage
+	d. static with no linkage
+
+2.	using declaration: only import one name in the namespace, and it conflicts with the 
+			local same name in the scope;
+	using directive: imports all the names in the namespace, and the local name will hide
+	 	         the same name in this namespace.
+
+3.	cin  ----------  std::cin
+	cout ---------- std::cout
+	endl ---------- std::endl
+
+4.	using std::cin;
+	using std::cout;
+	using std::endl;
+
+5.	file1.cpp:		static int average(int, int);
+	file2.cpp:		static double average(int, int);
+
+6.	10
+	4
+	0
+	Other: 10, 1
+	anther(): 10, -4
+
+7.	1
+	4, 1, 2
+	2
+	2
+	4, 1, 2
+	2
