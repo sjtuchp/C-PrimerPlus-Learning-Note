@@ -1,0 +1,48 @@
+1.	A user-defined type, including data representation 
+	and class menber function(to manipulate data menber)
+
+2. 	abstraction: You can use a public interface of class method to operatte the class object.
+	encaspulation: the detial of implementation is hidden
+	data hiding: use "private" visibility(default) for data menbers, only the class menber functions 
+		    can manipulate them.
+
+3. 	Object is a variable of class, like the standard type and its variable.
+
+4.	data menbers can be only private, while menber functions can be private or public.
+	(typically, not required)
+	if you create several objects of class, they have the storage for their own data menbers,
+	but use the same member functions.
+5.
+using std::string;
+class Bankaccount{
+	string name;
+	string accout;
+	double storage;
+public:
+	Bankaccount(const string & ="No Name", const string & = "No accout", double storage = 0 );
+	void show() const;
+	void save(double );
+	void withdraw(double);
+}; 
+
+6.	constructor: when you create a object of the class(or when you explict call)
+	destructor:  when the object expires
+
+7.	
+Bankaccount::Bankaccount(const string & n, const string & a, double st){
+	name = n;
+	account = a;
+	storage = st;
+}
+
+8.	when there is no arugment(or all the arugments are default), 
+	it will call the default constructor.
+	It can help declare objects without intializing.
+
+9.	const std::string & show_name() const;
+	const long show_shares() const;
+	const double show_share_val () const;
+	const double show_total_val() const;
+
+10.	this is the pointer pointing to the object, it's an address.
+	*this is the object which it points to.
