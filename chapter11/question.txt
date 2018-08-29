@@ -1,0 +1,27 @@
+1.
+	Stonewt operator*(double n){
+		return Stonewt(pounds * n);
+	} 
+
+2.	menber function: part of class, access the data menbers of invoking object implicitly
+	friend function: not part of class, access the data menbers using the membership operator.
+
+3.	for private menbers, it's right.
+
+4.	friend Stonewt operator*(double n, const Stonewt & st){
+		return Stonewt(st.pounds * n)
+	}
+
+5.	sizeof  
+	.  
+	.*  
+	::  
+	?:  
+	typeid 
+	const_cast dynamic_cast reinterpret_cast static_cast
+
+6.	must be menber function
+
+7.	operator double(){
+		return mag;
+	}
