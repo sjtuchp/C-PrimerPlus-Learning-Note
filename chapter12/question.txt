@@ -1,0 +1,47 @@
+1.	a. str pointer is uninitialzed
+	b. only copy the address of s
+	c.  without allocating the space 
+
+2.	a. forget to delete the memory allocated by new / delete them in class destructor
+	b. delete twice / define copy constructor
+	c. assign one object to another casuse delete twice / overload the assignment operator
+
+3.	default constructor;
+	copy constructor;
+	default destructor;
+	assignment operator;
+	address operator;
+
+4.	
+class nifty {
+	char *personality;
+	int talents;
+public:
+	nifty();
+	nifty(const char * s);
+	friend ostream & operator << (ostream & os, const nifty & n);
+};
+nifty::nifty(){
+	personality = NULL£»
+	talents = 0; 
+}
+nifty::nifty(const char *s){
+	personality = new char [strlen(s)+1];
+	strcpy(personality, s);
+	talents = 0; 
+}
+ostream & nifty::operator <<(ostream & os, const nifty & n){
+	os << n.personality;
+	return os;
+} 
+
+5.	#1 Golfer(); 
+	#2 Golfer(const char * name, int g = 0);
+	#3 Golfer(const char * name, int g = 0);
+	#4 Golfer(); 
+	#5 Golfer(const Golfer & g);
+	#6 Golfer(const char * name, int g = 0);
+	#7 default assignment operator
+	#8 Golfer(const char * name, int g = 0);
+	     default assignment operator
+	b. need to overload assignment operator.
