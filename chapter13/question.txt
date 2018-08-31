@@ -1,0 +1,38 @@
+1.	except constructor, desturcor, assignment operator, friend function
+
+2.	constructor, destructor, assignment operator, friend function
+
+3.	a. can't be right value
+	b. return a copy of *this
+
+4.	create: base -> derived
+	delete: derived -> base
+
+5. 	it's not need if the base class has default constructor.
+
+6.	derived-class method is called
+
+7.	when a new pointer  is added to derived class.
+
+8.	you can assign the address of derived-class object to the address of base-class object,
+	but you can't assign the address of base-class object to the address of derived-class object
+	unless you define a typecast function.
+
+9.	as review question 8
+
+10.	In c++, it's allowed that a base type refers to any type derived from that base. 
+
+11.	A copy constructor is invoked. baseclass(const & baseclass bc) upcast the derived class to base class.
+
+12.	not need to copy the object( constructor and destructor a new object)
+	save time and memory
+	for virtual function
+
+13.	a.	Corporation::head()
+	b.	PublicCorporation:: head()
+
+14.	a. House(){ all_sq_ft += kit_sq_st;}
+	derived class House can't use the private data in Kitchen
+	b. double area()
+	the definition in House hides that in Kitchen
+	c. it do not fit the is-a model
